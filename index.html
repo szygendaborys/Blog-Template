@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>A pinch of yum!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <section id="subscribeBar">
+        <p id="subscribeText"><span id="subscribeMain">Subscribe</span> <span id="subscribeSecondary">to get a free eCookbook with our top 25 recipes.</span></p>
+        <form class="form-inline" id="subscribeForm">
+                <label class="sr-only" for="inputName">Name</label>
+                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inputName" placeholder="Your Name" required>
+              
+                <label class="sr-only" for="inputMail">Email</label>
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                  <input type="email" class="form-control" id="inputMail" placeholder="Your E-Mail" required>
+                </div>
+              
+                <button type="submit" class="btn btn-primary" id="inputButton">&rarr;</button>
+                <button type="submit" class="btn btn-primary" id="inputButtonMobile">Apply</button>
+              </form>
+    </section>
+
+    <section id="main">
+        <div class="container-fluid">
+
+            <section id="header">
+
+                <h4 class="display-3"><span id="headerSecondary">blog</span><span id="headerPrimary">Name</span></h4>
+
+                <div class="menu-wrapper">
+                    <i class="fas fa-bars" id="collapseBtn"></i> <div id="mobileMenu">
+                   <a href="#" class="menuLink" id="aboutLink">about</a>
+                   <a href="#" class="menuLink" id="recipesLink">recipes</a>
+                   <a href="#" class="menuLink" id="shopLink">shop</a></div>
+                  <!-- <a href="#" class="menuLink" id="shopLink">contact</a>  pozniej mozesz sie pobawic w ustawianie tego -->
+                </div>
+
+                <div id="menuBox">
+                    <div class="mobileContainer">
+                        <button class="btn btn-default closeButton" id="closeBut">X</button>
+                        <a href="#" class="menuLinkMobile">about</a>
+                        <a href="#" class="menuLinkMobile">recipes</a>
+                        <a href="#" class="menuLinkMobile">shop</a>
+                    </div>
+                </div>
+
+                <div id="socialMedia">
+                    <a href="#" class="mediaLink"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="mediaLink"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="mediaLink"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#" class="mediaLink"><i class="fab fa-pinterest-square"></i></a>
+                </div>
+
+                <div id="finder">
+                    <div id="search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="inputSearch">
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="mainContent">
+                <div class="container">
+                  
+                    <div id="topInfo">
+                        <p>make this for dinner:</p> <a href="#" class="link"><p id="skipToBlog">or skip to the blog &rArr;</p></a> 
+                    </div>
+                    <hr class="spacer">
+
+                    <div class="row">
+                        <div class="col-sm-8"><p id="resultsSearch">search results for:</p></div>
+                            <div class="col-sm-8" id="leftCollumn">
+                                <div class="row">
+                                    <div class="col-sm-4 foodBox"><a href="#" class="link">
+                                        <img src="img/food.jpg" alt="Tasty Food!" class="foodImg">   
+                                        <p class="foodDescription text-center">Yet another amazing<br>dish!</p>                                  
+                                    </a></div> 
+                                    <div class="col-sm-4 foodBox"><a href="#" class="link">
+                                        <img src="img/food.jpg" alt="Tasty Food!" class="foodImg">   
+                                        <p class="foodDescription text-center">Yet another amazing<br>dish!</p>                                  
+                                    </a></div> 
+                                    <div class="col-sm-4 foodBox"><a href="#" class="link">
+                                        <img src="img/food.jpg" alt="Tasty Food!" class="foodImg">   
+                                        <p class="foodDescription text-center">Yet another amazing<br>dish!</p>                                  
+                                    </a></div> 
+                                  
+                                </div>
+
+                                <div class="row hidden">
+                                    <div class="col-md-6 foodBox"><a href="#" class="link">
+                                        <img src="img/food.jpg" alt="Tasty Food!" class="foodImg">   
+                                        <p class="foodDescription text-center">Yet another amazing<br>dish!</p>                                  
+                                    </a></div> 
+                                    <div class="col-md-6 foodBox"><a href="#" class="link">
+                                        <img src="img/food.jpg" alt="Tasty Food!" class="foodImg">   
+                                        <p class="foodDescription text-center">Yet another amazing<br>dish!</p>                                  
+                                    </a></div> 
+                                  
+                                </div>
+                                
+                            </div>
+                        
+                        <div id="rightCollumn" class="col-sm-4">
+                            <div class="avatarBox text-center">
+                                <i class="far fa-user"></i>
+                                <h3 class="display-5">Borys Szygenda</h3>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolore provident? 
+                                    Consectetur amet tenetur incidunt necessitatibus nesciunt. Quia sit recusandae repellat repudiandae ea!</p>
+                            </div>
+
+                            <div class="topList">
+                                <!--        TU BEDA 3 ZDJECIA Z KROTKIM OPISEM DO WPISOW        -->
+                                <h3 class="display-5">Most popular:</h3>
+
+                                <div class="topListBox"> <a href="#">
+                                    <img class="imgTopList" src="img/food.jpg" alt="topList1.jpg">
+                                    <p class="foodDescription text-center">One of the most popular dishes!</p>
+                                </a></div>
+
+                                <div class="topListBox"> <a href="#">
+                                    <img class="imgTopList" src="img/food.jpg" alt="topList1.jpg">
+                                    <p class="foodDescription text-center">One of the most popular dishes!</p>
+                                </a></div>
+
+                            </div>
+
+                        </div> 
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <section id="footer">
+        <hr>
+        <p class="text-right">Made by Borys Szygenda. For learning purposes only.</p>
+    </section>
+
+
+</body>
+</html>

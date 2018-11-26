@@ -1,0 +1,478 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing:border-box !important;
+}
+
+.link {
+    color: rgb(83, 18, 92);
+    font-weight: 500;
+}
+
+.link:hover {
+    text-decoration: none;
+    color:rgb(83, 18, 92);
+}
+
+.spacer {
+    width:120%;
+    margin-left:-10%;
+}
+
+#subscribeBar {
+    position:fixed;
+    display:flex;
+    align-content: center;
+    justify-content: space-around;
+    top:0px;
+    left:0px;
+    right:0;
+    min-height:60px;
+    background-color: rgb(83, 18, 92);
+    z-index: 99;
+
+    #subscribeMain {
+        font-size:24px;
+        color:rgba(255, 255, 255, 0.582);
+        margin-right:6px;
+    }
+    p {
+        color:white;
+        float: left;
+        margin:0;
+        align-self: center;
+        font-size:14px;
+    } p:hover {
+        cursor: pointer;
+    }
+
+    #subscribeForm {
+        justify-content: flex-start;
+        
+        input {
+            border-radius:0;
+            margin-right: 0 !important;
+            border-color:white;
+        } 
+        
+        #inputName {
+            margin-right:2px;
+        }
+
+        #inputMail {
+            border-right:none;
+        }
+
+        button {
+            background-color:white;
+            border-color:white;
+            color:rgb(83, 18, 92);
+            padding-top:5px; padding-bottom:4px;
+            border-radius: 0;
+            font-size:18px;
+            font-weight: bolder;
+            margin-left:-10px;
+        } button:hover {
+            background-color:rgb(83, 18, 92);
+            color:white;
+        } input:focus, button:active, button:focus, input:active {
+            box-shadow: none;
+        }
+    }
+}
+
+#subscribeBar::after {
+    content: "";
+    position:absolute;
+    left:20%;
+    top:60px;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-top:10px solid rgb(83, 18, 92);
+}
+
+#main {
+    margin-top:60px;
+    #header {
+        margin-left:13%;
+        padding-top:40px !important;
+        display:flex;
+
+        h4 {
+            color: rgb(83, 18, 92);
+            #headerSecondary {
+                color: rgba(83, 18, 92, 0.692);
+                font-size: 46px;
+            }
+        } h4:hover {
+            cursor: pointer;
+        }
+
+        .menu-wrapper {
+            display:flex;
+            align-items: center;
+            margin-left: 7%;
+            .menuLink {
+                font-size:22px;
+                margin-right:25px;
+                color:gray;
+                transition:500ms ease;
+            } .menuLink:hover {
+                text-decoration: none;
+                color:rgb(83, 18, 92);
+            }
+
+            i {
+                display:none;
+                color: rgb(83, 18, 92);
+                font-size:32px;
+                padding:5px;
+                border-radius:5px;
+            }
+        }
+
+        #socialMedia {
+            display:flex;
+            align-items: center;
+            margin:auto 5%;
+            i {
+                font-size:32px;
+                margin-right:10px;
+                color:rgb(83, 18, 92);
+            }
+
+        }
+
+        #finder {
+            
+            margin-right: 3%;
+            display:flex;
+            align-items:center;
+
+            #search {
+                background-color: rgb(231, 231, 231);
+                padding:10px;
+                display: flex;
+                align-items: center;
+            }
+            i{
+                font-size:20px;
+                color:rgb(83, 18, 92);
+            } 
+
+            #inputSearch {
+                margin-left:0px;
+                padding-left:10px;
+                border:none;
+                background-color: rgb(231, 231, 231);
+            } #inputSearch:focus {
+                outline: none;
+            }
+        }  
+    } 
+    #mainContent {
+        #topInfo {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top:40px;
+
+            p {
+                color:rgb(83, 18, 92);
+                font-size:22px;
+            }
+        } 
+
+        #resultsSearch {
+            color: rgb(83, 18, 92);
+            font-size:32px;
+        }
+
+        #leftCollumn {
+
+            .foodBox {
+                border-radius:5px;
+                padding-top:15px;
+
+                .foodDescription {
+                    margin-top:10px !important;
+                    transition:250ms ease;
+                }
+            }
+
+            .foodImg {
+                width:100%;
+                height:auto;
+                border-radius:2px;
+                transition:500ms ease;
+            } 
+        }
+
+        #rightCollumn {
+            margin-top:-40px !important;
+
+
+            .avatarBox {
+                color:rgb(83, 18, 92);
+                i {
+                    font-size:8rem;
+                    border-radius: 30%;
+                } 
+                h3 {
+                    margin-top:20px;
+                    font-size:2rem;
+                }
+                .description {
+                    font-size:12px;
+                    padding:10px;
+                }
+            }
+
+
+            .topList {
+
+                a:hover{
+                    text-decoration: none;
+                }
+
+                h3 {
+                    color:rgb(83, 18, 92);
+                    margin-left:10px;
+                    font-size:22px;
+                    margin-bottom:15px;
+                }
+
+                .imgTopList {
+                    height:200px;
+                    display:block;
+                    margin: auto;
+                    transition:500ms ease;
+                } .imgTopList:hover {
+                    filter: brightness(1.2);
+                }
+
+                .foodDescription {
+                    font-size:14px;
+                    margin-top:10px;
+                    color: rgb(83, 18, 92);
+                }
+            }
+        }
+
+
+    }
+
+} 
+
+#footer {
+    p {
+        color:rgb(83, 18, 92);
+        font-size: 13px;
+        margin-right:10%;
+    }
+}
+
+#menuBox {
+    display: none;
+}
+
+@media screen and (max-width:1044px) {
+    #inputName, #inputMail {
+        display:none;
+    }
+
+    #inputButton {
+        display:none;
+    }
+
+    #inputButtonMobile {
+        margin-bottom:0;
+        display:inline-block;
+        width:200px;
+    }
+
+    .menu-wrapper {
+        i {
+            display:block !important;
+        } 
+        #mobileMenu {
+            display:none !important;
+        }
+    }
+
+    #header {
+        justify-content: center !important;
+        margin-left:0 !important;
+    }
+
+    #menuBox {
+        z-index: 99 !important;
+        position: fixed !important;
+        height:100% !important;
+        overflow: hidden !important;
+        top:0 !important;
+        left:0 !important;
+        right:0;
+        bottom:0 !important;
+        background-color:rgb(83, 18, 92) !important;
+
+        .mobileContainer {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            .menuLinkMobile {
+                font-size:3rem;
+                margin-top:40px;
+                color:white;
+                text-align: center;
+                text-decoration: none;
+                background-color:rgba(0, 0, 0, 0.3);
+                padding-top:20px;
+                padding-bottom:20px;
+            } 
+
+            .closeButton {
+                border-radius:0;
+                min-height:50px !important;
+                color:white;
+                padding:0;
+                font-size:3rem;
+                background-color:rgba(0, 0, 0, 0.308);
+                width:50%;
+                margin-left:25%;
+                border-bottom-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+            } .closeButton:focus {
+                box-shadow: none !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1045px) {
+    #inputButtonMobile {
+        display:none;
+    }
+
+    .foodBox {
+        a:hover {
+            .foodImg {
+                filter: brightness(1.3);
+            } .foodDescription {
+                font-size: 18px;
+                margin-bottom: -18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    #inputButtonMobile {
+        display:inline-block;
+        width:100px !important;
+        margin-bottom:8px;
+    }
+
+    #headerPrimary {
+        font-size:40px;
+    } #headerSecondary {
+        font-size:28px !important;
+    }
+
+    #socialMedia {
+        display:none !important;
+    }
+
+    #header {
+        justify-content: space-between !important;
+        margin-left:0 !important;
+    }
+
+    #skipToBlog {
+        display: none !important;
+
+    }
+
+    .foodDescription {
+        font-size:2rem;
+    }
+}
+
+@media screen and (max-width:1280px) {
+
+    
+    #finder {
+        #search {
+            border-radius:15px;
+        }
+        
+        input {
+            display:none;
+            position: absolute;
+            top:190px;
+            left:0;
+            right:0;
+            width:100%;
+            padding-top:5px;
+            padding-bottom:5px;
+            font-size:1.5rem;
+            text-align: center;
+        }         
+    }
+}
+
+@media screen and (max-width:630px) {
+    #subscribeSecondary {
+        display:none !important;
+    } #subscribeMain {
+        font-size:30px !important;
+    }
+
+    #headerPrimary {
+        font-size:50px;
+    } #headerSecondary {
+        font-size:38px !important;
+    }
+
+    #header {
+        h4 {
+            margin-bottom:20px;
+        }
+    }
+
+}
+
+@media screen and (max-width:770px) {
+    #rightCollumn {
+        display:none !important;
+    }
+
+    .row {
+        justify-content: space-around;
+
+        .foodBox {
+            #leftCollumn {
+                width:100% !important; 
+                max-width: 100% !important;
+                flex: 0 0 100% !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 770px) {
+.col-sm-4 {
+    -ms-flex: 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+
+.foodDescription {
+    font-size:2rem;
+}
+
+}
+
+// POPRAW POZNIEJ HEADER ZEBY BYL NA SRODKU
